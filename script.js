@@ -1,19 +1,27 @@
-let itemUsuario = document.getElementById("itemUsuario");
-let botaoAdicionar = document.getElementById("botaoAdicionar");
+let input = document.getElementById("inputTarefa");
+let botao = document.getElementById("btnAdicionar");
+let lista = document.getElementById("listaTarefas");
+let mensagem = document.getElementById("mensagem");
 
-let itensLista = document.querySelector(".Lista");
+botao.addEventListener("click", () => {
 
-botaoAdicionar.addEventListener("click", () => {
+    let texto = input.value;
 
-    let itensDoUsuario = itemUsuario.value;
+    if (texto === "") {
 
-    if (itensDoUsuario) {
+        mensagem.innerHTML =
+        '<div class="alert alert-danger" role="alert">Adicione uma tarefa🤦‍♀️</div>';
 
-        let itensNovos = document.createElement("li");
-        itensNovos.innerText = itensDoUsuario;
+    } else {
+        let li = document.createElement("li");
+        li.className = "list-group-item";
+        li.innerText = texto;
 
-        itensLista.appendChild(itensNovos);
+        lista.appendChild(li);
+        input.value = "";
 
+        mensagem.innerHTML =
+        '<div class="alert alert-success" role="alert">Tarefa adicionada!</div>';
     }
 
 });
