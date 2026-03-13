@@ -1,18 +1,19 @@
-let formularioLogin = document.getElementById("formularioLogin");
-let botaoEntrar = document.querySelector("#botaoEntrar");
-let nomeUsuario = document.querySelector("#nomeUsuario")
-let mensagem = document.getElementById("mensagem")
+let itemUsuario = document.getElementById("itemUsuario");
+let botaoAdicionar = document.getElementById("botaoAdicionar");
 
+let itensLista = document.querySelector(".Lista");
 
-botaoEntrar.addEventListener("click", () => {
+botaoAdicionar.addEventListener("click", () => {
 
-    nomeUsuario = nomeUsuario.value
+    let itensDoUsuario = itemUsuario.value;
 
-    if (nomeUsuario) {
+    if (itensDoUsuario) {
 
-        mensagem.innerText = `Olá ${nomeUsuario}. Seja bem vinda(o)`
+        let itensNovos = document.createElement("li");
+        itensNovos.innerText = itensDoUsuario;
 
+        itensLista.appendChild(itensNovos);
 
     }
 
-})
+});
