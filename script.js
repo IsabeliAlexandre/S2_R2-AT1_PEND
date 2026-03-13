@@ -1,6 +1,6 @@
-let input = document.getElementById("inputTarefa");
-let botao = document.getElementById("btnAdicionar");
-let lista = document.getElementById("listaTarefas");
+let inputTarefa = document.getElementById("inputTarefa");
+let btnAdicionar = document.getElementById("btnAdicionar");
+let listaTarefas = document.getElementById("listaTarefas");
 let mensagem = document.getElementById("mensagem");
 
 botao.addEventListener("click", () => {
