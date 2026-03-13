@@ -1,18 +1,8 @@
-let formularioLogin = document.getElementById("formularioLogin");
-let botaoEntrar = document.querySelector("#botaoEntrar");
-let nomeUsuario = document.querySelector("#nomeUsuario")
-let mensagem = document.getElementById("mensagem")
+let textoInicial = document.getElementById("textoInicial")
+let botaoMudar = document.querySelector("btnMudar");
 
+botaoMudar.addEventListener("click", () => {
 
-botaoEntrar.addEventListener("click", () => {
-
-    nomeUsuario = nomeUsuario.value
-
-    if (nomeUsuario) {
-
-        mensagem.innerText = `Olá ${nomeUsuario}. Seja bem vinda(o)`
-
-
-    }
+        textoInicial.innerText = `Uma flor para você🌹`
 
 })
