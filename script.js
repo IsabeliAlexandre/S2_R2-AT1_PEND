@@ -3,22 +3,22 @@ let btnAdicionar = document.getElementById("btnAdicionar");
 let listaTarefas = document.getElementById("listaTarefas");
 let mensagem = document.getElementById("mensagem");
 
-botao.addEventListener("click", () => {
+btnAdicionar.addEventListener("click", () => {
 
-    let texto = input.value;
+    let mensagemDeTexto = inputTarefa.value;
 
-    if (texto === "") {
+    if (mensagemDeTexto === "") {
 
         mensagem.innerHTML =
         '<div class="alert alert-danger" role="alert">Adicione uma tarefa🤦‍♀️</div>';
 
     } else {
-        let li = document.createElement("li");
-        li.className = "list-group-item";
-        li.innerText = texto;
+        let lista = document.createElement("li");
+        lista.className = "list-group-item";
+        lista.innerText = mensagemDeTexto;
 
-        lista.appendChild(li);
-        input.value = "";
+        listaTarefas.appendChild(lista);
+        inputTarefa.value = "";
 
         mensagem.innerHTML =
         '<div class="alert alert-success" role="alert">Tarefa adicionada!</div>';
