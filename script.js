@@ -18,7 +18,6 @@ btnAdicionar.addEventListener("click", () => {
         lista.innerText = mensagemDeTexto;
 
         listaTarefas.appendChild(lista);
-        inputTarefa.value = "";
 
         mensagem.innerHTML =
         '<div class="alert alert-success" role="alert">Tarefa adicionada!</div>';
