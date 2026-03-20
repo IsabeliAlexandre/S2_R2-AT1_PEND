@@ -10,7 +10,7 @@ btnAdicionar.addEventListener("click", () => {
     if (mensagemDeTexto === "") {
 
         mensagem.innerHTML =
-        '<div class="alert alert-danger" role="alert">Adicione uma tarefa🤦‍♀️</div>';
+        '<div class="alert alert-danger" role="alert">Adicione uma tarefa🤦</div>';
 
     } else {
         let lista = document.createElement("li");
