@@ -8,9 +8,8 @@ btnAdicionar.addEventListener("click", () => {
     let mensagemDeTexto = inputTarefa.value;
 
     if (mensagemDeTexto === "") {
-
-        mensagem.innerHTML =
-        '<div class="alert alert-danger" role="alert">Adicione uma tarefa🤦</div>';
+        mensagem.innerText = 'Adicione uma tarefa🤦';
+        mensagem.className = 'alert alert-danger'
 
     } else {
         let lista = document.createElement("li");
@@ -19,8 +18,8 @@ btnAdicionar.addEventListener("click", () => {
 
         listaTarefas.appendChild(lista);
 
-        mensagem.innerHTML =
-        '<div class="alert alert-success" role="alert">Tarefa adicionada!</div>';
+        mensagem.innerHTML ='Tarefa adicionada!';
+        mensagem.className = 'alert alert-success'
     }
 
 });
