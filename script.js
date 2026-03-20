@@ -27,7 +27,6 @@ btnAdicionar.addEventListener("click", () =>  {
 
         lista.appendChild(btnRemover);
         listaTarefas.appendChild(lista);
-        inputTarefa.value = "";
 
         mensagem.innerHTML = '<div class="alert alert-success">Tarefa adicionada!</div>'; // classe bootstrap para mensagem de sucesso
     }
